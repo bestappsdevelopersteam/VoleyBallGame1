@@ -13,19 +13,19 @@ public class VolleyballPlayer {
         this.skill = skill;
         this.condition = condition;
     }
+
     public void rest () {   // condition +1
         condition++;
     }
 
     public void train () {   //skill + 1; condition -1
-       if (condition > 1) {
+        if (condition > 1) {
 
-           skill++;
-           condition--;
-       } else {
-           System.out.println ("Player " + name + " has condition only :" + condition + " and " +
-                   "can't train. Give him some rest.");
-       }
+            skill++;
+            condition--;
+        } else {
+            System.out.println ("Player " + name + " has condition only :" + condition + " and " + "can't train. Give him some rest.");
+        }
     }
 
     public String getName () {
