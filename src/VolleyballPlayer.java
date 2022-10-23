@@ -1,17 +1,25 @@
 public class VolleyballPlayer {
 
     private String name;
-    private String age;
+    public int age;
     private int position;//1-5
     private int skill; //1-10
     private int condition; //1-5
 
-    public VolleyballPlayer (String name, String age, int position, int skill, int condition) {
+    public VolleyballPlayer (String name, int age, int position, int skill, int condition) {
         this.name = name;
         this.age = age;
         this.position = position;
         this.skill = skill;
         this.condition = condition;
+    }
+
+    public VolleyballPlayer () {
+        this.name = "Peter";
+        this.age = 23;
+        this.position = 1;
+        this.skill = 5;
+        this.condition = 4;
     }
 
     public void rest () {   // condition +1
@@ -36,11 +44,11 @@ public class VolleyballPlayer {
         this.name = name;
     }
 
-    public String getAge () {
+    public int getAge () {
         return age;
     }
 
-    public void setAge (String age) {
+    public void setAge (int age) {
         this.age = age;
     }
 
