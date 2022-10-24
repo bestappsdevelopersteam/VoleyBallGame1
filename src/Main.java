@@ -10,19 +10,21 @@ public class Main {
         int randomStrength2 = rand.nextInt (upperbound);
 
         VolleyballTeam team1 = new VolleyballTeam ();
-        VolleyballTeam team2 = new VolleyballTeam ("Plamen","Ludogorec","Hose",null, {"Joe1", 25, 1, 4,5},{"Joe1", 25, 1, 4,5},{"Joe1", 25, 1, 4,5},
-        {"Joe1", 25, 1, 4,5},{"Joe1", 25, 1, 4,5});
+        VolleyballTeam team2 = new VolleyballTeam ();
         System.out.println (team1);
         System.out.println (team2);
         // check if team1 and team2 are equal
-        if (team1.equals(team2)) {
-            System.out.println("team1 and team2 are equal");
-        } else {
-            System.out.println("team1 and team2 are not equal");
+
+       public void playMatch (team1, team2) {
+
+            if (team1.equals (team2)) {
+                System.out.println ("team1 and team2 are equal");
+            } else {
+                System.out.println ("team1 and team2 are not equal");
+            }
+
         }
-
     }
-
 }
 
 /*
